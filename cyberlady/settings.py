@@ -122,6 +122,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
@@ -129,6 +130,14 @@ CORS_ALLOW_ALL_ORIGINS = True
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:3000",
+    "http://cyberlady.in",
+    "http://www.cyberlady.in",
+    "https://cyberlady.in",
+    "https://www.cyberlady.in",
+    "http://server.cyberlady.in",
+    "http://www.server.cyberlady.in",
+    "https://server.cyberlady.in",
+    "https://www.server.cyberlady.in",
 ]
 
 
