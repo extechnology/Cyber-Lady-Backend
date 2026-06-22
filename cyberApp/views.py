@@ -28,6 +28,12 @@ class ProductImageViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = ProductImage.objects.all()
     serializer_class = ProductImageSerializer
 
+# hero images viewset
+
+class HeroImageViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = HeroImage.objects.all()
+    serializer_class = HeroImagesSerializer
+
 # section images viewset
 
 class SectionImagesViewSet(viewsets.ReadOnlyModelViewSet):

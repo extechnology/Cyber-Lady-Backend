@@ -43,13 +43,17 @@ class ProductSerializer(serializers.ModelSerializer):
             'created_at', 'updated_at'
         ]
 
+class HeroImagesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = HeroImage
+        fields = ['id', 'image', 'alt_text', 'section']
 
 
 class SectionImagesSerializer(serializers.ModelSerializer):
     class Meta:
         model = SectionImage
-        fields = ['id', 'image', 'alt_text', 'section', 'created_at', 'updated_at']
-
+        fields = ['id', 'image', 'alt_text', 'section']
+    
 
 class ContactSerializer(serializers.ModelSerializer):
     class Meta:
