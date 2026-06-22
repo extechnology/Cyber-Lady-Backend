@@ -46,7 +46,7 @@ class ProductSerializer(serializers.ModelSerializer):
 class HeroImagesSerializer(serializers.ModelSerializer):
     class Meta:
         model = HeroImage
-        fields = ['id', 'image', 'alt_text', 'section']
+        fields = ['id', 'image', 'alt_text', 'order']
 
 
 class SectionImagesSerializer(serializers.ModelSerializer):
