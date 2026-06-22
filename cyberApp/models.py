@@ -77,7 +77,7 @@ class HeroImage(models.Model):
         ordering = ['order']
 
     def __str__(self):
-        return self.title or f"Hero Image {self.id}"
+        return self.alt_text 
 
 
 class ContactUs(models.Model):
